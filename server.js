@@ -48,6 +48,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/ipa', (req, res) => {
+    res.render('DEM_ipa.plist', {
+        pageTitle: 'Ipa Page',
+        currentYear: new Date().getFullYear()
+    });
+});
+
 app.get('/projects', (req, res) => {
     res.render('projects.hbs', {
         pageTitle: 'Projects Page',
